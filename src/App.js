@@ -1,23 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import Math from "./Math";
+import Math2 from "./Math2";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+        <Math a b />
+        <Math a='1' b='2' />
+        <Math a={1} b={2} />
+        <Math a={1} b={2} foo={()=>{console.log('Do smth ...')}} />
+        <br/>
+        <Math2 a={1} b={2} />
+        <Math2 a={1} b={2} specProp='smth else...'/>
     </div>
   );
 }
